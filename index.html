@@ -26,9 +26,11 @@
       --magenta: #8F86C0;
       --heading-font-size: 150%;
     }
-    [data-theme="dark"] {
-      --background: #29303E;
-      --color: #E0E3ED;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #29303E;
+        --color: #E0E3ED;
+      }
     }
     .view-desktop { display: block; }
     .view-mobile { display: none; }
